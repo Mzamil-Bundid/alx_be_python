@@ -24,7 +24,7 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.subtract(-5, -3), -2, "-5 - -3 should equal -2")
         self.assertEqual(self.calc.subtract(5.5, 2.5), 3.0, "5.5 - 2.5 should equal 3.0")
 
-    def test_multiply(self):
+    def test_multiplication(self):
         """Test the multiplication method with various inputs."""
         self.assertEqual(self.calc.multiply(2, 3), 6, "2 * 3 should equal 6")
         self.assertEqual(self.calc.multiply(-2, 3), -6, "-2 * 3 should equal -6")
@@ -32,7 +32,7 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.multiply(-2, -3), 6, "-2 * -3 should equal 6")
         self.assertEqual(self.calc.multiply(1.5, 2.0), 3.0, "1.5 * 2.0 should equal 3.0")
 
-    def test_divide(self):
+    def test_division(self):
         """Test the division method with various inputs and edge cases."""
         self.assertEqual(self.calc.divide(10, 5), 2.0, "10 / 5 should equal 2.0")
         self.assertEqual(self.calc.divide(-10, 5), -2.0, "-10 / 5 should equal -2.0")
