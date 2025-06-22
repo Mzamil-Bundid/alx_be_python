@@ -31,4 +31,9 @@ class Library:
     
     def list_books(self):
         for book in self.books:
-            print(book)  # Use __str__ method directly
+            if isinstance(book, EBook):
+                print(f"EBook: {book}")
+            elif isinstance(book, PrintBook):
+                print(f"PrintBook: {book}")
+            else:
+                print(f"Book: {book}")
